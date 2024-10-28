@@ -1,11 +1,11 @@
 {
   "mappings": [
-    "/content/securbank/:/",
-    "/content/securbank/placeholders:/placeholders.json",
-    "/content/securbank/loans/mortgagecalc:/mortgagecalc.json",
+    "/content/atruvia/:/",
+    "/content/atruvia/placeholders:/placeholders.json",
+    "/content/atruvia/loans/mortgagecalc:/mortgagecalc.json",
     "/graphql:/graphql",
-    "/content/securbank.resource/icons/:/icons/",
-    "/content/securbank/configuration:/.helix/config.json"
+    "/content/atruvia.resource/icons/:/icons/",
+    "/content/atruvia/configuration:/.helix/config.json"
   ],
-  "includes": ["/content/securbank/"]
+  "includes": ["/content/atruvia/"]
 }
