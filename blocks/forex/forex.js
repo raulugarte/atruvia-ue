@@ -17,6 +17,6 @@ export default async function decorate(block) {
       `;
       container.append(tr);
     });
-  block.innerHTML = `<h2 class='sectionHeading'>Wechselkurse für den ${index.title}</h2>`;
+  block.innerHTML = `<h2 class='sectionHeading'>Wechselkurse - ${index.title}</h2>`;
   block.append(container);
 }
