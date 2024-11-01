@@ -2,7 +2,7 @@
 export default async function decorate(block) {
   const aempublishurl = 'https://publish-p130407-e1279066.adobeaemcloud.com';
   const aemauthorurl = 'https://author-p130407-e1279066.adobeaemcloud.com';
-  const persistedquery = '/graphql/execute.json/securbank/OfferByPath';
+  const persistedquery = '/graphql/execute.json/atruvia/angebotSparenByPath';
   const offerpath = block.querySelector(':scope div:nth-child(1) > div a').innerHTML.trim();
   const variationname = block.querySelector(':scope div:nth-child(2) > div').innerHTML.trim();
 
@@ -16,7 +16,9 @@ export default async function decorate(block) {
     .then((contentfragment) => {
       let offer = '';
       if (contentfragment.data) {
-        offer = contentfragment.data.offerByPath.item;
+        /* offer = contentfragment.data.offerByPath.item; */
+        offer = contentfragment.data.angebotSparenByPath.item;
+        
       }
       return offer;
     });
