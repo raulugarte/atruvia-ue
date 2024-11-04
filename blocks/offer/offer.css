@@ -1,5 +1,6 @@
-
-
+.offer block{
+    justify-items: center;
+}
 .banner-content {
     position: relative;
     border: #717171 0.2px solid;
